@@ -32,7 +32,7 @@ export class AppComponent {
   constructor(private currencyService: CurrencyService) { }
  convertCurrency() {
     if (this.baseCurrency === 'CAD' || this.targetCurrency === 'CAD') {
-      // executong Api
+      // executing Api
       this.currencyService.getExchangeRate(this.baseCurrency, this.targetCurrency, this.conversionDate).subscribe(
         (data) => {                                                                                                
           this.noConversion = data.observations.length === 0;
