@@ -26,7 +26,7 @@ export class AppComponent {
   convertedDate = "";
   isConverted = false;
   noConversion = false;
-  //supported  foreign currencies type
+  //supported  foreign currencies types
   currencyTypes = ["USD", "EUR", "JPY", "GBP", "AUD", "CHF", "CNY", "HKD", "MXN", "INR","CAD"];                   
 
   constructor(private currencyService: CurrencyService) { }
